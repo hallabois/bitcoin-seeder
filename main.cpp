@@ -418,12 +418,8 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"dnsseed.bluematt.me", "bitseed.xf2.org", "dnsseed.bitcoin.dashjr.org", "seed.bitcoin.sipa.be", ""};
-static const string testnet_seeds[] = {"testnet-seed.alexykot.me",
-                                       "testnet-seed.bitcoin.petertodd.org",
-                                       "testnet-seed.bluematt.me",
-                                       "testnet-seed.bitcoin.schildbach.de",
-                                       ""};
+static const string mainnet_seeds[] = {"hallacoin1.northeurope.azurecontainer.io", "hallacoin2.northeurope.azurecontainer.io", "hallacoin3.northeurope.azurecontainer.io"};
+static const string testnet_seeds[] = {"hallacoin1.northeurope.azurecontainer.io", "hallacoin2.northeurope.azurecontainer.io", "hallacoin3.northeurope.azurecontainer.io"};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
